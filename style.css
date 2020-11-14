@@ -358,12 +358,11 @@
         line-height: 1.9rem;
         color: #1f1e1e;
     }
-    /*Referencia rész */
+    /*Referencia rész 2*/
     
-    #references .references-container {
+    #references .references {
         flex-direction: column;
         max-width: 100%;
-        margin: 0 auto;
         padding: 0;
     }
     
