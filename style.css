@@ -215,13 +215,16 @@
     }
     
     #hero .logojel {
-        width: 300px;
-        height: 300px;
+        width: 170px;
+        height: 170px;
         display: block;
         margin: auto;
         padding: auto;
+        margin-bottom: 30px;
         align-items: center;
         position: center;
+        animation: fadeIn;
+        animation-duration: 5s;
     }
     
     #hero h1 {
@@ -236,10 +239,14 @@
         text-align: center;
         letter-spacing: .2rem;
         text-transform: uppercase;
+        animation: fadeIn;
+        animation-duration: 5s;
     }
     
     #hero hr {
         border-color: #F9FA0F;
+        animation: fadeIn;
+        animation-duration: 5s;
     }
     
     #hero h2 {
@@ -251,6 +258,8 @@
         margin-top: 20px;
         margin-bottom: 30px;
         font-weight: 500;
+        animation: fadeIn;
+        animation-duration: 5s;
     }
     
     #hero .call {
@@ -314,6 +323,8 @@
         text-transform: uppercase;
         letter-spacing: .2rem;
         text-align: center;
+        animation: fadeInDown;
+        animation-duration: 5s;
     }
     
     #services .service-top p {
@@ -349,6 +360,8 @@
         height: 50px;
         width: 50px;
         margin-bottom: 20px;
+        animation: fadeInLeft;
+        animation-duration: 3s;
     }
     
     #service .service-item h3 {
@@ -356,6 +369,8 @@
         margin-bottom: 10px;
         text-transform: uppercase;
         color: #1f1e1e;
+        animation: fadeInRight;
+        animation-duration: 3s;
     }
     
     #service .service-item p {
@@ -363,6 +378,8 @@
         font-size: 1rem;
         line-height: 1.9rem;
         color: #1f1e1e;
+        animation: fadeInRight;
+        animation-duration: 3s;
     }
     /*Referencia rész*/
     
@@ -379,6 +396,8 @@
         color: #1f1e1e;
         font-size: 1.5rem;
         margin-bottom: 10px;
+        animation: fadeInDown;
+        animation-duration: 5s;
     }
     
     #references .references-header p {
@@ -407,6 +426,8 @@
         overflow: hidden;
         text-align: center;
         display: flex;
+        animation: fadeInLeft;
+        animation-duration: 3s;
     }
     
     .index-gallery>.gallery-image:hover>a,
@@ -559,21 +580,27 @@
         margin-bottom: 10px;
         letter-spacing: .2rem;
         color: #F9FA0F;
+        animation: fadeInDown;
+        animation-duration: 5s;
     }
     
     #bemutat .bemutat-container h4 {
         text-align: center;
         margin-bottom: 20px;
         color: white;
+        animation: fadeIn;
+        animation-duration: 5s;
     }
     
     #bemutat .bemutat-container p {
         text-align: center;
         color: white;
+        animation: fadeIn;
+        animation-duration: 5s;
     }
     /*Kapcsolat rész*/
     
-    .contact {
+    #contact {
         position: relative;
         min-height: 100vh;
         padding: 30px;
@@ -585,26 +612,28 @@
         background-size: cover;
     }
     
-    .contact .contact-header {
+    #contact .contact-header {
         max-width: 800px;
         text-align: center;
         margin-bottom: 50px;
     }
     
-    .contact .contact-header h3 {
+    #contact .contact-header h3 {
         font-size: 1.5rem;
         letter-spacing: .2rem;
         text-transform: uppercase;
         font-weight: 500;
         color: black;
+        animation: fadeInDown;
+        animation-duration: 5s;
     }
     
-    .contact .contact-header p {
+    #contact .contact-header p {
         font-size: 1rem;
         color: black;
     }
     
-    .contact .contact-container {
+    #contact .contact-container {
         width: 100%;
         display: flex;
         justify-content: center;
@@ -669,7 +698,7 @@
     
     .contactForm .inputBox input[type="submit"] {
         width: 100%;
-        background: #666;
+        background: #1f1e1e;
         color: white;
         text-transform: uppercase;
         border: none;
@@ -698,21 +727,21 @@
         animation: status 4s ease forwards;
     }
     
-    .contact .contactInfo {
+    #contact .contactInfo {
         width: 100%;
         display: flex;
         flex-direction: column;
         left: 0;
     }
     
-    .contact .contactInfo .box {
+    #contact .contactInfo .box {
         position: relative;
         padding: 20px 0;
         display: flex;
         left: 0;
     }
     
-    .contact .contactInfo .box .icon {
+    #contact .contactInfo .box .icon {
         min-width: 50px;
         height: 60px;
         display: flex;
@@ -722,7 +751,7 @@
         border-radius: 50%;
     }
     
-    .contact .contactInfo .box .text {
+    #contact .contactInfo .box .text {
         display: flex;
         margin-left: 20px;
         font-size: 16px;
@@ -731,8 +760,12 @@
         font-weight: 400;
     }
     
-    .contact .contactInfo .box .text h4 {
+    #contact .contactInfo .box .text h4 {
         font-weight: 600;
+    }
+    
+    #contact .contactInfo .box .text p {
+        text-align: left;
     }
     /*Kapcsolatok rész
     
@@ -794,28 +827,28 @@
     }
     
     #footer .footer {
-        min-height: 200px;
+        min-height: 100px;
         flex-direction: column;
-        padding-top: 50px;
-        padding-bottom: 10px;
+        padding-top: 5px;
+        padding-bottom: 5px;
     }
     
     #footer .logojel {
-        width: 100px;
-        height: 100px;
+        width: 70px;
+        height: 70px;
+        margin: 10px;
+        align-items: center;
     }
     
     #footer .social-icon {
         display: flex;
-        margin-bottom: 20px;
+        margin-bottom: 5px;
     }
     
     #footer .social-item {
-        height: 15px;
-        width: 15px;
-        margin-bottom: 0 5px;
-        margin: 10px;
         align-items: center;
+        padding: 0;
+        margin: 5px;
     }
     
     #footer p {
@@ -849,6 +882,10 @@
             pointer-events: none;
         }
     }
+    
+    @keyframes fadeIn {
+        animate__fadeIn
+    }
     /* Reszponzivitás - Tabletnek (betűméreteket nem állítottam át)*/
     
     @media only screen and (min-width: 768px) {
@@ -861,15 +898,9 @@
             margin: 2.5%;
             flex-direction: column;
         }
-        .contact .contactInfo .box {
-            left: 400px;
-        }
         .index-gallery>.gallery-image {
             flex: 40%;
             height: 20rem;
-        }
-        .contact .contactInfo .box {
-            left: 300px;
         }
         /*#contact .contact {
             flex-direction: column;
@@ -943,7 +974,7 @@
             flex: 30%;
             height: 20rem;
         }
-        .contact {
+        #contact {
             position: relative;
             min-height: 100vh;
             padding: 50px;
@@ -951,7 +982,7 @@
             justify-content: center;
             align-items: center;
         }
-        .contact .contact-container {
+        #contact .contact-container {
             justify-content: center;
             align-items: center;
             flex-direction: row;
@@ -959,10 +990,10 @@
         .contactForm {
             background-color: white;
         }
-        .contact .contactInfo {
+        #contact .contactInfo {
             display: flex;
         }
-        .contact .contactInfo .box {
+        #contact .contactInfo .box {
             position: relative;
             padding: 20px 0;
             display: flex;
