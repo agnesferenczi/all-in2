@@ -232,21 +232,23 @@
         width: fit-content;
         font-size: 1.5rem;
         position: relative;
-        color: white;
         margin: auto;
         margin-bottom: 10px;
         padding: auto;
         text-align: center;
+        color: white;
         letter-spacing: .2rem;
         text-transform: uppercase;
-        animation: fadeIn;
-        animation-duration: 5s;
+        animation: eltunes 5s ease forwards;
+        opacity: 0;
+        animation-delay: 1s;
     }
     
     #hero hr {
         border-color: #F9FA0F;
-        animation: fadeIn;
-        animation-duration: 5s;
+        animation: vonal 5s ease forwards;
+        animation-delay: 2s;
+        opacity: 0;
     }
     
     #hero h2 {
@@ -258,8 +260,9 @@
         margin-top: 20px;
         margin-bottom: 30px;
         font-weight: 500;
-        animation: fadeIn;
-        animation-duration: 5s;
+        animation: szoveg 5s ease forwards;
+        animation-delay: 3s;
+        opacity: 0;
     }
     
     #hero .call {
@@ -323,8 +326,6 @@
         text-transform: uppercase;
         letter-spacing: .2rem;
         text-align: center;
-        animation: fadeInDown;
-        animation-duration: 5s;
     }
     
     #services .service-top p {
@@ -360,8 +361,6 @@
         height: 50px;
         width: 50px;
         margin-bottom: 20px;
-        animation: fadeInLeft;
-        animation-duration: 3s;
     }
     
     #service .service-item h3 {
@@ -369,8 +368,6 @@
         margin-bottom: 10px;
         text-transform: uppercase;
         color: #1f1e1e;
-        animation: fadeInRight;
-        animation-duration: 3s;
     }
     
     #service .service-item p {
@@ -378,8 +375,6 @@
         font-size: 1rem;
         line-height: 1.9rem;
         color: #1f1e1e;
-        animation: fadeInRight;
-        animation-duration: 3s;
     }
     /*Referencia rész*/
     
@@ -767,59 +762,6 @@
     #contact .contactInfo .box .text p {
         text-align: left;
     }
-    /*Kapcsolatok rész
-    
-    #contact .contact {
-        flex-direction: column;
-        width: 100%;
-        margin: 0 auto;
-        background-color: #F9FA0F;
-    }
-    
-    #contact .section-title {
-        color: rgb(31, 30, 30);
-        margin: 50px;
-        font-weight: 500;
-        text-align: center;
-        letter-spacing: .2rem;
-    }
-    
-    #contact .contact-items {
-        width: 400px;
-    }
-    
-    #contact .contact-item {
-        text-align: center;
-        color: rgb(31, 30, 30);
-        background-color: white;
-        padding: 5px;
-        margin: 30px;
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
-        box-shadow: 0px 0px 18px #0000002c;
-        transition: .3 ease box-shadow;
-    }
-    
-    #contact .contact-item:hover {
-        box-shadow: 0px 0px 4px 0 #0000002c;
-    }
-    
-    #contact .icon {
-        margin: 0 auto;
-        margin-bottom: 3px;
-    }
-    
-    #contact .contact-info h3 {
-        font-size: 1rem;
-        font-weight: bold;
-        margin-bottom: 5px;
-    }
-    
-    #contact .contact-info h4 {
-        font-size: 0.7rem;
-    }*/
     /*Footer rész*/
     
     #footer {
@@ -883,8 +825,34 @@
         }
     }
     
-    @keyframes fadeIn {
-        animate__fadeIn
+    @keyframes eltunes {
+        from {
+            opacity: 0%;
+        }
+        to {
+            opacity: 100%;
+            color: white;
+        }
+    }
+    
+    @keyframes vonal {
+        from {
+            opacity: 0%;
+        }
+        to {
+            opacity: 100%;
+            border-color: #F9FA0F
+        }
+    }
+    
+    @keyframes szoveg {
+        from {
+            opacity: 0%;
+        }
+        to {
+            opacity: 100%;
+            color: white;
+        }
     }
     /* Reszponzivitás - Tabletnek (betűméreteket nem állítottam át)*/
     
