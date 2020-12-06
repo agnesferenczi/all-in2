@@ -224,7 +224,7 @@
         align-items: center;
         position: center;
         animation: fadeIn;
-        animation-duration: 5s;
+        animation-duration: 2s;
     }
 
     #hero h1 {
@@ -239,15 +239,15 @@
         color: white;
         letter-spacing: .2rem;
         text-transform: uppercase;
-        animation: eltunes 5s ease forwards;
+        animation: eltunes 2s ease forwards;
         opacity: 0;
         animation-delay: 1s;
     }
 
     #hero hr {
         border-color: #F9FA0F;
-        animation: vonal 5s ease forwards;
-        animation-delay: 2s;
+        animation: vonal 2s ease forwards;
+        animation-delay: 1s;
         opacity: 0;
     }
 
@@ -260,8 +260,8 @@
         margin-top: 20px;
         margin-bottom: 30px;
         font-weight: 500;
-        animation: szoveg 5s ease forwards;
-        animation-delay: 3s;
+        animation: szoveg 3s ease forwards;
+        animation-delay: 1s;
         opacity: 0;
     }
 
@@ -939,6 +939,7 @@
             position: relative;
             min-height: 100vh;
             padding: 50px;
+            padding-top: 100px;
             display: flex;
             justify-content: center;
             align-items: center;
