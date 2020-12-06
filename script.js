@@ -75,16 +75,3 @@ function ajax(method, url, data, success, error) {
     xhr.send(data);
 }
 
-//Scrolling fade effektekhez szükséges kód
-
-const checkpoint = 300;
-
-window.addEventListener("scroll", () => {
-    const currentScroll = window.pageYOffset;
-    if (currentScroll <= checkpoint) {
-        opacity = 1 - currentScroll / checkpoint;
-    } else {
-        opacity = 0;
-    }
-    document.querySelector(".tag").style.opacity = opacity;
-});
