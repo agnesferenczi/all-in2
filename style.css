@@ -737,7 +737,7 @@
     }
 
     #contact .contactInfo .box .icon {
-        min-width: 50px;
+        width: 60px;
         height: 60px;
         display: flex;
         justify-content: center;
