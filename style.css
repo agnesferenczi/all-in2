@@ -315,7 +315,7 @@
         text-align: center;
         max-width: 1500px;
         margin: 0 auto;
-        padding: 100px 0;
+        padding-top: 100px;
     }
 
     #service .service-title {
@@ -382,6 +382,7 @@
         background-color: #F9FA0F;
         margin: 0;
         padding: 20px;
+        padding-top: 100px;
         max-width: 100%;
     }
 
@@ -599,6 +600,7 @@
         position: relative;
         min-height: 100vh;
         padding: 30px;
+        padding-top: 100px;
         display: flex;
         justify-content: center;
         align-items: center;
