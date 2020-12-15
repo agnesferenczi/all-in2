@@ -481,11 +481,11 @@
                  background-image: url("img/img3.jpg");
              }
              
-             .index-gallery>.gallery-image>.cimszo {
+             .index-gallery>.gallery-image>.fakivagas {
                  background-image: url("img/img4.jpg");
              }
              
-             .index-gallery>.gallery-image>.galambvedelem {
+             .index-gallery>.gallery-image>.galamb-riasztas {
                  background-image: url("img/img5.jpg");
              }
              
@@ -503,9 +503,9 @@
              
              .bemutat-container {
                  flex-direction: column;
-                 justify-items: right;
+                 justify-items: center;
                  margin: 0 auto;
-                 width: 90%;
+                 width: 95%;
                  padding: 15px;
                  position: relative;
                  z-index: 1;
@@ -547,7 +547,7 @@
              
              #bemutat .call {
                  display: inline-block;
-                 padding: 10px 30px;
+                 padding: 10px 10px;
                  color: rgb(31, 30, 30);
                  background-color: #e6d302;
                  font-size: 0.9rem;
@@ -891,6 +891,10 @@
                      padding: 20px;
                      align-items: center;
                  }
+                 #bemutat .call {
+                     margin: 0;
+                     margin-top: 10px;
+                 }
              }
              
              @media only screen and (min-width: 1200px) {
@@ -1017,9 +1021,8 @@
                      color: #e6d302;
                  }
                  #bemutat .call {
-                     justify-content: center;
+                     text-align: center;
                      background-color: #7a0000;
                      color: white;
-                     margin-left: 450px;
                  }
              }
