@@ -33,7 +33,7 @@
                  text-align: center;
                  font-size: 1rem;
                  line-height: 1.9rem;
-                 color: #1C3041;
+                 color: rgb(31, 30, 30);
                  letter-spacing: .05rem;
                  margin-top: 5px;
              }
@@ -41,7 +41,7 @@
              .section-title {
                  font-size: 1.5rem;
                  font-weight: 500;
-                 color: black;
+                 color: rgb(31, 30, 30);
                  margin-bottom: 10px;
                  text-transform: uppercase;
                  letter-spacing: .2rem;
@@ -65,8 +65,8 @@
              }
              
              #header .brand {
-                 width: 120px;
                  position: left;
+                 width: 120px;
              }
              
              .header .nav-bar {
@@ -252,6 +252,23 @@
                  animation: szoveg 3s ease forwards;
                  animation-delay: 1.5s;
                  opacity: 0;
+                 text-transform: uppercase;
+                 letter-spacing: .2rem;
+             }
+             
+             #hero h3 {
+                 display: block;
+                 width: fit-content;
+                 font-size: 0.9rem;
+                 color: white;
+                 margin: auto;
+                 margin-top: 20px;
+                 margin-bottom: 10px;
+                 font-weight: 500;
+                 margin-top: 40px;
+                 animation: hivjon 3s ease forwards;
+                 animation-delay: 2s;
+                 opacity: 0;
              }
              
              #hero .call {
@@ -262,10 +279,10 @@
                  font-size: 0.8rem;
                  text-transform: uppercase;
                  letter-spacing: .1rem;
-                 margin-top: 30px;
+                 margin-top: 5px;
                  transition: .5s ease;
                  transition-property: background-color, color;
-                 margin: 20px;
+                 margin: 5px;
                  animation: kiemelt 3s ease forwards;
                  animation-delay: 2s;
                  opacity: 0;
@@ -292,8 +309,7 @@
              */
              
              #hero .call:hover {
-                 background-color: #e6d302;
-                 color: red;
+                 background-color: #630000;
              }
              /*
              #hero .ajanlat:hover {
@@ -469,28 +485,28 @@
              }
              
              .index-gallery>.gallery-image>.alpin-technika {
-                 background-image: url("img/img1.jpg");
+                 background-image: url("img/img6.jpg");
                  /* majd nevezd at a kepeket */
              }
              
              .index-gallery>.gallery-image>.epitoipari-munkak {
-                 background-image: url("img/img2.jpg");
+                 background-image: url("img/epito/20191212_110425.jpg");
              }
              
              .index-gallery>.gallery-image>.reklam-kihelyezes {
-                 background-image: url("img/img3.jpg");
+                 background-image: url("img/reklam/img3.jpg");
              }
              
              .index-gallery>.gallery-image>.fakivagas {
-                 background-image: url("img/img4.jpg");
+                 background-image: url("img/favagas/20181205_113240.jpg");
              }
              
              .index-gallery>.gallery-image>.galamb-riasztas {
-                 background-image: url("img/img5.jpg");
+                 background-image: url("img/galamb/20181218_145933.jpg");
              }
              
              .index-gallery>.gallery-image>.ipari-tisztitas {
-                 background-image: url("img/img6.jpg");
+                 background-image: url("img/takaritas/takaritas_borito.jpg");
              }
              /*Bemutatkozás rész*/
              
@@ -536,8 +552,6 @@
                  text-align: left;
                  margin-bottom: 20px;
                  color: rgb(31, 30, 30);
-                 animation: fadeIn;
-                 animation-duration: 5s;
              }
              
              #bemutat .bemutat-container p {
@@ -556,10 +570,10 @@
                  margin-top: 30px;
                  transition: .3s ease;
                  transition-property: background-color, color;
-                 margin: 20px;
                  box-shadow: 1px 1px 1px black;
                  animation: fadeInLeft;
                  animation-duration: 3s;
+                 width: 220px;
              }
              
              #bemutat .call:hover {
@@ -666,6 +680,47 @@
                  transform: translateY(-20px);
              }
              
+             .contactForm .inputBox input[type="file"] {
+                 color: white;
+                 background-color: rgb(31, 30, 30);
+                 border: white solid 3px;
+                 font-size: 16px;
+                 cursor: pointer;
+                 opacity: 0;
+                 margin: 0;
+                 padding: 0;
+             }
+             
+             label {
+                 color: white;
+                 cursor: pointer;
+                 font-size: 16px;
+                 border-bottom: white solid 1px;
+                 margin: 10px 0;
+                 padding: 5px 0;
+             }
+             
+             form ol {
+                 padding-left: 0;
+             }
+             
+             form li,
+             div>h6 {
+                 background: rgb(31, 30, 30);
+                 display: flex;
+                 justify-content: space-between;
+                 list-style-type: none;
+                 color: white;
+                 font-size: 16px;
+             }
+             
+             form h6 {
+                 line-height: 32px;
+                 padding-left: 20px;
+                 color: white;
+                 font-size: 10px;
+             }
+             
              .contactForm .inputBox input[type="submit"] {
                  width: 100%;
                  background: #b20000;
@@ -675,6 +730,7 @@
                  cursor: pointer;
                  padding: 10px;
                  font-size: 18px;
+                 box-shadow: 1px 1px 1px black;
              }
              
              #status {
@@ -721,9 +777,14 @@
                  border-radius: 50%;
              }
              
+             #contact .contactInfo .box .icon:hover {
+                 background-color: #7a0000;
+             }
+             
              #contact .contactInfo .box .text {
                  display: flex;
-                 margin-left: 20px;
+                 margin-left: 10px;
+                 margin-right: 0;
                  font-size: 16px;
                  color: rgb(31, 30, 30);
                  flex-direction: column;
@@ -733,11 +794,15 @@
              #contact .contactInfo .box .text h4 {
                  font-weight: 600;
                  color: rgb(31, 30, 30);
+                 text-transform: uppercase;
+                 letter-spacing: .2rem;
              }
              
              #contact .contactInfo .box .text p {
                  text-align: left;
                  color: rgb(31, 30, 30);
+                 font-size: 10px;
+                 font-weight: 600;
              }
              /*Footer rész*/
              
@@ -832,6 +897,15 @@
                  }
              }
              
+             @keyframes hivjon {
+                 from {
+                     opacity: 0%;
+                 }
+                 to {
+                     opacity: 100%;
+                 }
+             }
+             
              @keyframes kiemelt {
                  from {
                      opacity: 0%;
@@ -895,9 +969,15 @@
                      margin: 0;
                      margin-top: 10px;
                  }
+                 #contact .contactInfo .box .text p {
+                     font-size: 15px;
+                 }
              }
              
              @media only screen and (min-width: 1200px) {
+                 #header .nav-list ul {
+                     width: 100%;
+                 }
                  #hero {
                      background-image: url(./img/landing_fekete.jpg);
                      background-position: top center;
@@ -969,6 +1049,9 @@
                      display: flex;
                      left: 50px;
                  }
+                 #contact .contactInfo .box .text p {
+                     font-size: 15px;
+                 }
                  #service .service {
                      max-width: 100%;
                      padding: 50px 0;
@@ -1022,7 +1105,10 @@
                  }
                  #bemutat .call {
                      text-align: center;
+                     display: block;
                      background-color: #7a0000;
                      color: white;
+                     margin: 0 auto;
+                     margin-top: 20px;
                  }
              }
