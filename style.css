@@ -9,7 +9,7 @@
                  font-size: 20px;
                  font-family: "Montserrat", sans-serif;
                  scroll-behavior: smooth;
-                 background-color: black;
+                 background-color: rgb(31, 30, 30);
              }
              
              a {
@@ -192,7 +192,7 @@
                  background-position: top left;
                  position: relative;
                  z-index: 1;
-                 padding-top: 60px;
+                 padding-top: 40px;
              }
              
              #hero .hero {
@@ -561,22 +561,14 @@
              #bemutat .call {
                  display: inline-block;
                  padding: 10px 10px;
-                 color: rgb(31, 30, 30);
-                 background-color: #e6d302;
+                 color: white;
+                 background-color: #b20000;
                  font-size: 0.9rem;
                  text-transform: uppercase;
                  letter-spacing: .1rem;
                  margin-top: 30px;
-                 transition: .3s ease;
-                 transition-property: background-color, color;
                  box-shadow: 1px 1px 1px black;
-                 animation: fadeInLeft;
-                 animation-duration: 3s;
                  width: 220px;
-             }
-             
-             #bemutat .call:hover {
-                 background-color: #7a0000;
              }
              /*Kapcsolat rész*/
              
