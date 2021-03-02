@@ -9,6 +9,7 @@
                  font-size: 20px;
                  font-family: "Montserrat", sans-serif;
                  scroll-behavior: smooth;
+                 background-color: black;
              }
              
              a {
@@ -441,8 +442,6 @@
                  overflow: hidden;
                  text-align: center;
                  display: flex;
-                 animation: fadeInLeft;
-                 animation-duration: 3s;
              }
              
              .index-gallery>.gallery-image:hover>a,
@@ -627,8 +626,6 @@
                  justify-content: center;
                  background-color: rgb(31, 30, 30);
                  margin-bottom: 40px;
-                 animation: fadeInLeft;
-                 animation-duration: 3s;
              }
              
              .contactForm h4 {
